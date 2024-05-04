@@ -2,6 +2,8 @@
 
 This Python script retrieves data from an Airtable base, identifies relational columns, and builds a knowledge graph using the retrieved data. The knowledge graph is then visualized using the pyvis library and displayed in a web application built with Flask.
 
+It works well with small Airtables but I'm having some issues when the Airtable is too big.
+
 ## Prerequisites
 
 Before running the script, ensure that you have the following:
