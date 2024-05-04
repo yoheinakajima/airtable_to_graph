@@ -37,10 +37,11 @@ Before running the script, ensure that you have the following:
 To retrieve data from Airtable, you need to provide your Airtable API key. Here's how you can find your API key:
 
 1. Log in to your Airtable account.
-2. Go to your account settings by clicking on your profile picture in the top-right corner and selecting "Account".
-3. In the account settings page, scroll down to the "API" section.
-4. Click on the "Generate API key" button to create a new API key.
-5. Copy the generated API key.
+2. Go to the Developer Hub settings by clicking on your profile picture in the top-right corner and selecting "Developer Hub".
+3. In the Personal Key page, click on "Create New Token" button on top right.
+4. Give the token a name, and give it the Scopes permissions of data.records:read and schema.bases:read.
+5. Add all bases, or select the base you want to connect.
+6. Click "Create Token" button and copy the generated API key.
 
 ## Configuration
 
@@ -48,7 +49,6 @@ To retrieve data from Airtable, you need to provide your Airtable API key. Here'
 
   ```
   export AIRTABLE_API_KEY=your_api_key_here
-  export AIRTABLE_BASE_ID=your_base_id_here
   ```
 
   Replace `your_api_key_here` with your actual Airtable API key and `your_base_id_here` with the ID of the Airtable base you want to retrieve data from.
